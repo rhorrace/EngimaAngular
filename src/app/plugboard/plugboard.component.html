@@ -1,6 +1,6 @@
 <div class="plugboard-row">
     <div class="plugboard-switch" *ngFor="let value of row1; let idx = index;" [id]="'plug' + value">
-        <label [id]="'plug-top' + value">{{value}}</label><br><br>
+        <label [for]="'plug-down' + value" [id]="'plug-top' + value">{{value}}</label><br><br>
         <select [name]="'plug-down' + value" [id]="'plug-down' + value" [(ngModel)]="plugboardMap[value]" (change)="onChange(value)">
             <option *ngFor="let letter of letters">{{letter}}</option>
         </select>
