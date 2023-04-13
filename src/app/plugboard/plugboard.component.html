@@ -2,7 +2,9 @@
     <div class="plugboard-switch" *ngFor="let value of row1; let idx = index;" [id]="'plug' + value">
         <label [for]="'plug-down' + value" [id]="'plug-top' + value">{{value}}</label><br><br>
         <select [name]="'plug-down' + value" [id]="'plug-down' + value" [(ngModel)]="plugboardMap[value]" (change)="onChange(value)">
-            <option *ngFor="let letter of letters">{{letter}}</option>
+            <ng-container *ngFor="let letter of letters">
+                <option>{{letter}}</option>
+            </ng-container>
         </select>
     </div>
 </div>
@@ -10,7 +12,9 @@
     <div class="plugboard-switch" *ngFor="let value of row2; let idx = index;" [id]="'plug' + value">
         <label [for]="'plug-down' + value" [id]="'plug-top' + value">{{value}}</label><br><br>
         <select [name]="'plug-down' + value" [id]="'plug-down' + value" [(ngModel)]="plugboardMap[value]" (change)="onChange(value)">
-            <option *ngFor="let letter of letters">{{letter}}</option>
+            <ng-container *ngFor="let letter of letters">
+                <option>{{letter}}</option>
+            </ng-container>
         </select>
     </div>
 </div>
@@ -18,7 +22,9 @@
     <div class="plugboard-switch" *ngFor="let value of row3; let idx = index;" [id]="'plug' + value">
         <label [for]="'plug-down' + value" [id]="'plug-top' + value">{{value}}</label><br><br>
         <select [name]="'plug-down' + value" [id]="'plug-down' + value" [(ngModel)]="plugboardMap[value]" (change)="onChange(value)">
-            <option *ngFor="let letter of letters">{{letter}}</option>
+            <ng-container *ngFor="let letter of letters">
+                <option>{{letter}}</option>
+            </ng-container>
         </select>
     </div>
 </div>

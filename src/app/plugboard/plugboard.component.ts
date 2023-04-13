@@ -36,11 +36,20 @@ export class PlugboardComponent {
 
     let connected: string = this.plugboardMap[x];
 
+    let connectedPrevious = this.previousMap[connected];
+
+    this.plugboardMap[connectedPrevious] = connectedPrevious;
+    this.previousMap[connectedPrevious] = connectedPrevious;
+
     this.plugboardMap[connected] = x;
     this.previousMap[x] = this.plugboardMap[x];
   }
 
   isConnected(plug: string): boolean {
     return this.plugboardMap[plug] !== plug;
+  }
+
+  toDisable(): boolean {
+    return false;
   }
 }
