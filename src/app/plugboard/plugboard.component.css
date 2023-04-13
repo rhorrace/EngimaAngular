@@ -1,0 +1,19 @@
+.plugboard-row {
+    text-align: center;
+}
+
+.plugboard-switch {
+    background-color: white; /* Green */
+    border: 3px;
+    border-color: black;
+    border-style: solid;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 2px;
+  }

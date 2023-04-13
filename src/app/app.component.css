@@ -1,0 +1,44 @@
+.enigma {
+    display: grid;
+    grid-template-columns: 25% auto auto auto 25%;
+    grid-template-areas: 
+        'a b b b c'
+        'd d d d d'
+        'e e e e e'
+        'f f f f f';
+    gap: 1px;
+    background-color: black;
+    padding: 1px;
+    width: 50%;
+}
+  
+.enigma > div {
+    background-color: white;
+    text-align: center;
+    padding: 1px;
+    font-size: 30px;
+}
+
+.reflector {
+    grid-area: a;
+}
+
+.rotors {
+    grid-area: b;
+}
+
+.entrywheel {
+    grid-area: c;
+}
+
+.lightboard {
+    grid-area: d;
+}
+
+.keyboard {
+    grid-area: e;
+}
+
+.plugboard {
+    grid-area: f
+}

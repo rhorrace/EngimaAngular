@@ -1,0 +1,6 @@
+<label for="reflectorSelect">Reflector:</label><br>
+<select name="reflectorSelect" id="reflectorSelect" [(ngModel)]="reflectorSelected">
+    <ng-container *ngFor="let id of reflectorTags">
+        <option [ngValue]="id">{{id}}</option>
+    </ng-container>
+</select>

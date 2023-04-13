@@ -1,0 +1,1 @@
+export const EntrywheelTags: string[] = ['A', 'B', 'C'];

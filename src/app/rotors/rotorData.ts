@@ -1,0 +1,1 @@
+export const rotorNumbers = ['I', 'II', 'III', 'IV',  'V'];
