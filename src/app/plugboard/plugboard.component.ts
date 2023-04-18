@@ -49,7 +49,8 @@ export class PlugboardComponent {
     return this.plugboardMap[plug] !== plug;
   }
 
-  toDisable(): boolean {
-    return false;
+  toDisable(x: string): boolean {
+    let difCount = this.letters.filter(x => this.plugboardMap[x] !== x).length;
+    return difCount === 10 && this.plugboardMap[x] === x;
   }
 }

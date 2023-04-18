@@ -9,9 +9,9 @@ import { rotorNumbers } from './rotorData';
 export class RotorsComponent {
   numRotors: number = 3;
   rotorNumbers: string[] = rotorNumbers;
-  rotorSelect1: string = "";
-  rotorSelect2: string = "";
-  rotorSelect3: string = "";
+  rotorSelect1: string = rotorNumbers[0];
+  rotorSelect2: string = rotorNumbers[1];
+  rotorSelect3: string = rotorNumbers[2];
 
   isSelectedRotor1(value: string): boolean {
     return this.rotorSelect1 === value;

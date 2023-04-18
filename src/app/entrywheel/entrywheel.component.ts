@@ -8,5 +8,5 @@ import { EntrywheelTags } from './entrywheelData';
 })
 export class EntrywheelComponent {
   readonly entrywheelTags = Array.from(EntrywheelTags);
-  entrywheelSelected: string = "";
+  entrywheelSelected: string = this.entrywheelTags[0];
 }

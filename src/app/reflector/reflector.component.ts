@@ -8,5 +8,5 @@ import { ReflectorTags } from './reflectorData';
 })
 export class ReflectorComponent {
   reflectorTags: string[] = ReflectorTags;
-  reflectorSelected: string = "";
+  reflectorSelected: string = this.reflectorTags[0];
 }
