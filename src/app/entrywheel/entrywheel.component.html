@@ -1,4 +1,4 @@
 <label for="entrywheelSelected">Entrywheel:</label><br>
-<select name="entrywheelSelected" id="entrywheelSelected" [(ngModel)]="entrywheelSelected">
+<select name="entrywheelSelected" id="entrywheelSelected" class="entrywheelSelect" [(ngModel)]="entrywheelSelected">
   <option *ngFor="let value of entrywheelTags" [value]="value">{{value}}</option>
 </select>  

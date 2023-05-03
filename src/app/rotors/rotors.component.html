@@ -1,6 +1,6 @@
 Rotors:<br>
 <div class="rotor">
-    <select forControlName="rotorSelect1" name="rotorSelect1" id="rotorSelect1" [(ngModel)]="rotorSelect1">
+    <select forControlName="rotorSelect1" name="rotorSelect1" id="rotorSelect1" class="rotorSelect" [(ngModel)]="rotorSelect1">
         <ng-container *ngFor="let option of rotorNumbers">
             <option *ngIf="!(isSelectedRotor2(option) || isSelectedRotor3(option))" [ngValue]="option">{{option}}</option>
         </ng-container>
@@ -8,7 +8,7 @@ Rotors:<br>
     <input type="number" min="1" max="26" id="rotor-input1" placeholder="1">
 </div>
 <div class="rotor">
-    <select forControlName="rotorSelect2" name="rotorSelect2" id="rotorSelect2" [(ngModel)]="rotorSelect2">
+    <select forControlName="rotorSelect2" name="rotorSelect2" id="rotorSelect2" class="rotorSelect" [(ngModel)]="rotorSelect2">
         <ng-container *ngFor="let option of rotorNumbers">
             <option *ngIf="!(isSelectedRotor1(option) || isSelectedRotor3(option))" [ngValue]="option">{{option}}</option>
         </ng-container>
@@ -16,7 +16,7 @@ Rotors:<br>
     <input type="number" min="1" max="26" id="rotor-input2" placeholder="1">
 </div>
 <div class="rotor">
-    <select forControlName="rotorSelect3q" name="rotorSelect3" id="rotorSelect3" [(ngModel)]="rotorSelect3">
+    <select forControlName="rotorSelect3q" name="rotorSelect3" id="rotorSelect3" class="rotorSelect" [(ngModel)]="rotorSelect3">
         <ng-container *ngFor="let option of rotorNumbers">
             <option *ngIf="!(isSelectedRotor1(option) || isSelectedRotor2(option))" [ngValue]="option">{{option}}</option>
         </ng-container>

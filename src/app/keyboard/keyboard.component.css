@@ -16,3 +16,11 @@
     height: 50px;
     width: 50px;
 }
+
+.keyboard-button:hover {
+    background-color: darkgray;
+}
+
+.keyboard-button:active {
+    background-color: gray;
+}
