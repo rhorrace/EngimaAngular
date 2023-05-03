@@ -3,7 +3,25 @@
 }
 
 .lightboard-light {
-    background-color: white; /* Green */
+    background-color: white;
+    border: 3px;
+    border-color: black;
+    border-style: solid;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: context-menu;
+}
+
+.lightboard-light-on {
+    background-color: yellow;
     border: 3px;
     border-color: black;
     border-style: solid;

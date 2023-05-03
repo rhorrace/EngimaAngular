@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { Row1, Row2, Row3 } from '../board';
 
 @Component({
@@ -11,4 +11,12 @@ export class LightboardComponent {
   row2: string[] = Array.from(Row2);
   row3: string[] = Array.from(Row3);
   
+  @Input() toLightUp: string = "";
+
+
+  getLightClass(value: string): string {
+    console.log(this.toLightUp);
+    return value === this.toLightUp ?
+    "lightboard-light-on" : "lightboard-light";
+  }
 }

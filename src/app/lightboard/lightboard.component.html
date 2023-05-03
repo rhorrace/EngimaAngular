@@ -1,9 +1,15 @@
 <div class="lightboard-row">
-  <button class="lightboard-light" *ngFor="let value of row1" [id]="'light' + value">{{value}}</button>
+  <button class="lightboard-light" *ngFor="let value of row1" [id]="'light' + value" [ngClass]="getLightClass(value)">
+    {{value}}
+  </button>
 </div>
 <div class="lightboard-row">
-  <button class="lightboard-light" *ngFor="let value of row2" [id]="'light' + value">{{value}}</button>
+  <button class="lightboard-light" *ngFor="let value of row2" [id]="'light' + value" [ngClass]="getLightClass(value)">
+    {{value}}
+  </button>
 </div>
 <div class="lightboard-row">
-  <button class="lightboard-light" *ngFor="let value of row3" [id]="'light' + value">{{value}}</button>
+  <button class="lightboard-light" *ngFor="let value of row3" [id]="'light' + value"[ngClass]="getLightClass(value)">
+    {{value}}
+  </button>
 </div>

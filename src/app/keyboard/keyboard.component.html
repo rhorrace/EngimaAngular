@@ -1,9 +1,9 @@
 <div class="keyboard-row">
-    <button class="keyboard-button"  *ngFor="let value of row1" [id]="'key' + value">{{value}}</button>
+    <button class="keyboard-button"  *ngFor="let value of row1" [id]="'key' + value" (click)="onKeyPress(value)">{{value}}</button>
 </div>
 <div class="keyboard-row">
-    <button class="keyboard-button"  *ngFor="let value of row2" [id]="'key' + value">{{value}}</button>
+    <button class="keyboard-button"  *ngFor="let value of row2" [id]="'key' + value" (click)="onKeyPress(value)">{{value}}</button>
 </div>
 <div class="keyboard-row">
-    <button class="keyboard-button"  *ngFor="let value of row3" [id]="'key' + value">{{value}}</button>
+    <button class="keyboard-button"  *ngFor="let value of row3" [id]="'key' + value" (click)="onKeyPress(value)">{{value}}</button>
 </div>
