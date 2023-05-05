@@ -3,3 +3,6 @@ export const Row1: string[] = ['Q','W','E','R','T','Z','U','I','O'];
 export const Row2: string[] = ['A','S','D','F','G','H','J','K'];
 export const Row3: string[] = ['P','Y','X','C','V','B','N','M','L'];
 
+export type map = {
+    [id: string]: string; 
+}

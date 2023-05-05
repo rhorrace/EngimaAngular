@@ -15,7 +15,7 @@
         <app-keyboard (keyPressed)="onKeyPress($event)"></app-keyboard>
     </div>
     <div class="plugboard">
-        <app-plugboard></app-plugboard>
+        <app-plugboard [plugboardMap]="plugboardMap"></app-plugboard>
     </div>
 </div>
 <router-outlet></router-outlet>

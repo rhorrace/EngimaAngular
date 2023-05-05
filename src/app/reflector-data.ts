@@ -1,0 +1,5 @@
+export const reflectorSequences = {
+    'A' : 'EJMZALYXVBWFCRQUONTSPIKHGD',
+    'B' : 'YRUHQSLDPXNGOKMIEBFZCWVJAT',
+    'C' : 'FVPJIAOYEDRZXWGCTKUQSBNMHL',
+}

@@ -1,13 +1,12 @@
-import { Component } from '@angular/core';
-import { Row1, Row2, Row3, Letters } from '../board';
-import { map } from './plugboardTypes';
+import { AfterViewInit, Component, Input } from '@angular/core';
+import { Row1, Row2, Row3, Letters, map } from '../board';
 
 @Component({
   selector: 'app-plugboard',
   templateUrl: './plugboard.component.html',
   styleUrls: ['./plugboard.component.css']
 })
-export class PlugboardComponent {
+export class PlugboardComponent implements AfterViewInit {
   readonly letters: string[] = Array.from(Letters);
   readonly row1 = Array.from(Row1);
   readonly row2 = Array.from(Row2);
@@ -16,10 +15,17 @@ export class PlugboardComponent {
 
   plugsSelected: string[] = Array.from(this.plugDefaults);
   previousPlugs: string[] = Array.from(this.plugsSelected);
-  plugboardMap: map = {};
+  @Input() plugboardMap: map = {};
   previousMap: map = {};
 
   constructor() {
+    this.initPlugboardMap();
+  }
+  ngAfterViewInit(): void {
+    this.initPlugboardMap();
+  }
+
+  initPlugboardMap(): void {
     this.plugDefaults.forEach(element => {
       this.plugboardMap[element] = element;
       this.previousMap[element] = element;
@@ -54,3 +60,4 @@ export class PlugboardComponent {
     return difCount === 10 && this.plugboardMap[x] === x;
   }
 }
+
